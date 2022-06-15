@@ -1,5 +1,9 @@
 
 pipeline {
+    options {
+        disableConcurrentBuilds()
+    }
+
     stages {
         stage('install') {
             steps {
